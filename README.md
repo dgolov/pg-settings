@@ -20,12 +20,12 @@ sudo dpkg-reconfigure locales
 
 ```
 sudo vim /etc/profile
-    export LANGUAGE=ru_RU.UTF-8
-    export LANG=ru_RU.UTF-8
-    export LC_ALL=ru_RU.UTF-8
+export LANGUAGE=ru_RU.UTF-8
+export LANG=ru_RU.UTF-8
+export LC_ALL=ru_RU.UTF-8
 ```
 
-### Измените postgesпароль, создайте чистую базу данных с именем dbms_db:
+### Измените postges пароль, создайте чистую базу данных с именем dbms_db:
 
 ```
 sudo passwd postgres
@@ -35,7 +35,7 @@ createdb --encoding UNICODE dbms_db --username postgres
 exit
 ```
 
-### Создайте dbmsпользователя db и предоставьте ему большие привилегии:
+### Создайте dbms пользователя db и предоставьте ему большие привилегии:
 
 ```
 sudo -u postgres psql
